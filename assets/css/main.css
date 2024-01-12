@@ -20,10 +20,18 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.navbar-brand {
+.navbar-toggler {
+    background-color: #ffeae6;
+}
+
+.section-title {
     font-family: "Pacifico", cursive;
 }
 
-.navbar-toggler {
+.section-title span {
+    color: #e15f41;
+}
+
+#sobre {
     background-color: #ffeae6;
 }

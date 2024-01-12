@@ -9,16 +9,16 @@
         <title>EBAC Restaurante</title>
     </head>
     <body>
-        <header class="navbar navbar-expand-lg sticky-top pt-4 p-4">
+        <header id="cabecalho" class="navbar navbar-expand-lg sticky-top pt-4 p-4">
             <div class="container">
-                <h1 class="navbar-brand m-0">EBAC Restaurante</h1>
+                <h1 class="navbar-brand m-0 section-title">EBAC Restaurante</h1>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav id="menu-navegacao" class="navbar-collapse collapse justify-content-end pt-4 pt-md-3 pt-lg-0">
                     <ul class="nav nav-pills d-block d-md-flex">
                         <li class="nav-item fw-bold">
-                            <a class="nav-link active" href="#sobre">
+                            <a class="nav-link" href="#sobre">
                                 <span class="bi bi-house-door me-1"></span>
                                 Sobre o Restaurante
                             </a>
@@ -45,32 +45,76 @@
                 </nav>
             </div>
         </header>
-        <section id="sobre">
-            <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="assets/images/slides/slide1.png" alt="Interior do restaurante" />
+        <div data-bs-spy="scroll" data-bs-target="cabecalho">
+            <section id="sobre">
+                <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="assets/images/slides/slide1.png" alt="Interior do restaurante" />
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/images/slides/slide2.png" alt="Taças de vinho" />
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="assets/images/slides/slide3.png" alt="Comida exposta no buffet" />
+                        </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="assets/images/slides/slide2.png" alt="Taças de vinho" />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="assets/images/slides/slide3.png" alt="Comida exposta no buffet" />
+                    <button
+                        type="button"
+                        class="carousel-control-prev"
+                        data-bs-target="#carrossel"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                        type="button"
+                        class="carousel-control-next"
+                        data-bs-target="#carrossel"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button class="active" type="button" data-bs-target="#carrossel" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
                     </div>
                 </div>
-                <button type="button" class="carousel-control-prev" data-bs-target="#carrossel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button type="button" class="carousel-control-next" data-bs-target="#carrossel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-                <div class="carousel-indicators">
-                    <button class="active" type="button" data-bs-target="#carrossel" data-bs-slide-to="0"></button>
-                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
+                <div class="pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img
+                                    class="d-block w-100 rounded"
+                                    src="assets/images/restaurante.jpg"
+                                    alt="Interior do restaurante"
+                                />
+                            </div>
+                            <div class="col-md-7">
+                                <h2 class="section-title">Sobre <span>o restaurante</span></h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at deleniti quidem
+                                    dicta eum, in commodi voluptate similique minima quasi accusantium sapiente beatae
+                                    atque tempore doloribus corporis ad adipisci eaque.
+                                </p>
+                                <h3 class="section-title">Sobre <span>o espaço</span></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, placeat perferendis
+                                    reprehenderit corrupti nesciunt molestias! Ab vel quo quis ducimus debitis sequi
+                                    suscipit veniam, optio saepe eius voluptatem similique ut.
+                                </p>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
